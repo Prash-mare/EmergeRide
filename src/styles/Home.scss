@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+.cs{
+    height: 100vh;
+    background-color: #daeafa;
+    // background-image: url(../assets/_72ca2ac2-3b28-484d-b1fa-6a1698121310.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y;
+    font-family: roboto,sans-serif;
+    margin: 20px;
+    margin-left: 40px;
+    filter: blur(50%);
+}
+h1{
+    display: block;
+    font-weight: 300;
+    font-size: 30px;
+}
+h2{
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    color: black;
+    font-size: 50px;
+}
+.bold{
+    font-weight: 800;
+}

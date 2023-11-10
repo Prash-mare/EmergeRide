@@ -9,8 +9,9 @@ const bcss={
 }
 const styling={
     display: "flex",
-    justifyContent: "space-evenly",
+    justifyContent: "space-between",
     width: "100%",
+    padding: "0",
 }
 const book={
     width:"auto",
@@ -37,17 +38,23 @@ const custom={
     fontWeight: "500",
 }
 const imgstyler={
-    objectFit: "contain",
-    maxWidth: "121px",
-    userSelect: "none",
+    
     draggable: "false",
+}
+const containerimg={
+  backgroundSize: "cover",
+    backgroundPosition: "right",
+  maxWidth:"140px",
+  height: "auto",
+  userSelect: "none",
 }
 const Header = () => {
   return (
     <HStack {...styling}>
-    <HStack>
+    <HStack {...containerimg}>
         <Image {...imgstyler} src={img}/>
     </HStack>
+    <HStack>
    <HStack  p={4}  >
    
     <Button _hover={{transform:"scale(1.2)"}} {...bcss}>
@@ -81,6 +88,7 @@ const Header = () => {
       }} {...book} {...custom}>
       <Link to='/login'>Login</Link>
     </Button>
+    </HStack>
    </HStack>
    </HStack>
   )
