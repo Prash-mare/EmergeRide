@@ -1,28 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+
+// #ffe9c0
+// #fec4b5
+// #6c9dac
 .cs{
     height: 100vh;
-    background-color: #daeafa;
-    // background-image: url(../assets/_72ca2ac2-3b28-484d-b1fa-6a1698121310.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: repeat-y;
+    width: 100vw;
+    background-color: #fff;
+    background-image: linear-gradient(to right,rgb(254, 255, 255),#ffffff,rgb(167, 192, 211),#df9393);
+    // background-image: url(../assets/_fcb17128-ab02-4590-8081-883dc91081e3.jpg),linear-gradient(to bottom,#ffe9c0,#fec4b5,#6c9dac) ;
+    // background-size: auto 40%;
+    // background-position: right,bottom;
+    // background-repeat: repeat-x,no-repeat;
     font-family: roboto,sans-serif;
-    margin: 20px;
     margin-left: 40px;
-    filter: blur(50%);
+    margin-right: 40px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 h1{
     display: block;
     font-weight: 300;
-    font-size: 30px;
+    font-size: 3vw;
+    text-wrap: wrap;
+    text-align: center;
 }
 h2{
     display: block;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 100;
     color: black;
-    font-size: 50px;
+    font-size: 5vw;
+    text-align: center;
 }
 .bold{
     font-weight: 800;
 }
+.color1{
+    color: #fc2361
+}
+// .background{
+//     background-image: url(../assets/_fcb17128-ab02-4590-8081-883dc91081e3.jpg);
+//     background-size: cover;
+//     background-position: bottom;
+//     background-repeat: repeat-y;
+//     display: flex;
+//     align-items: center;
+// }

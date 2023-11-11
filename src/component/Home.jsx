@@ -5,6 +5,7 @@ import animationdata from "../assets/Animation - 1699646803606.json"
 import { Link } from 'react-router-dom'
 import {FaPhone} from "react-icons/fa"
 
+
 const container={
     width:"100%",
     display: "flex",
@@ -12,26 +13,28 @@ const container={
     userSelect:"none",
 }
 
+
 const buttonStyle={
-    width: "60%",
-    color: "#fff",
-    borderRadius: "6px!important",
-    fontWeight: "600",
-    background: "#fc2361",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    textAlign: "center",
-    verticalAlign: "middle",
-    cursor: "pointer",
-    userSelect: "none",
+  width: "60%",
+  color: "#fff",
+  borderRadius: "6px!important",
+  fontWeight: "600",
+  background: "#fc2361",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  textAlign: "center",
+  verticalAlign: "middle",
+  cursor: "pointer",
+  userSelect: "none",
 }
 
 const custom={
-    backgroundColor: "#daeafa",
-    color:"#fc2361",
-    border: "2px solid #fc2361"
+  backgroundColor: "#daeafa",
+  color:"#fc2361",
+  border: "2px solid #fc2361"
 }
+
 
 const Home = () => {
   return (
@@ -39,7 +42,7 @@ const Home = () => {
    <VStack {...container}>
     <HStack>
     <VStack>
-    <h1>Your One step solutions For 24*7 Ambulance Service</h1>
+    <h1>Your One step solutions For <span className='color1'>24*7</span> Ambulance Service</h1>
     <h2>At Your Doorstep!</h2>
     <Button _hover={{
         background: "rgb(221, 42, 87)" 
@@ -59,8 +62,13 @@ const Home = () => {
       </Link>
       </Button>
     </VStack>
-    <Lottie  style={{ width: "50%", height: "auto" }}  loop play speed={0.5} animationData={animationdata} />
+    <Lottie style={{ width: "100%", height: "auto" }}  loop play speed={0.5} animationData={animationdata} />
     </HStack>
+   </VStack>
+
+  
+   <VStack>
+
    </VStack>
    </div>
   )

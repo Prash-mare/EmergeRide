@@ -2,6 +2,7 @@ import React from 'react'
 import { Button, HStack, Image} from '@chakra-ui/react'
 import { Link } from 'react-router-dom'
 import img from "../assets/Add a heading (1).png"
+
 const bcss={
   color: "black",
   variant: "unstyled",
@@ -38,7 +39,7 @@ const custom={
     fontWeight: "500",
 }
 const imgstyler={
-    
+    maxHeight: "80px",
     draggable: "false",
 }
 const containerimg={
