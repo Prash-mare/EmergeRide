@@ -12,7 +12,7 @@ const styling={
     display: "flex",
     justifyContent: "space-between",
     width: "100%",
-    padding: "0",
+    height: "110px",
 }
 const book={
     width:"auto",
@@ -39,14 +39,13 @@ const custom={
     fontWeight: "500",
 }
 const imgstyler={
-    maxHeight: "80px",
+    width: "121px",
     draggable: "false",
 }
 const containerimg={
   backgroundSize: "cover",
+  marginLeft: "1%",
     backgroundPosition: "right",
-  maxWidth:"140px",
-  height: "auto",
   userSelect: "none",
 }
 const Header = () => {

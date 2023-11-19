@@ -15,7 +15,7 @@ const container={
 
 
 const buttonStyle={
-  width: "60%",
+  width: "15vw",
   color: "#fff",
   borderRadius: "6px!important",
   fontWeight: "600",
@@ -23,18 +23,19 @@ const buttonStyle={
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  textAlign: "center",
-  verticalAlign: "middle",
   cursor: "pointer",
   userSelect: "none",
 }
 
 const custom={
-  backgroundColor: "#daeafa",
+  backgroundColor: "white",
   color:"#fc2361",
   border: "2px solid #fc2361"
 }
 
+const m0={
+  margin:"0"
+}
 
 const Home = () => {
   return (
@@ -47,7 +48,7 @@ const Home = () => {
     <Button _hover={{
         background: "rgb(221, 42, 87)" 
       }} {...buttonStyle}>
-        <Link to="/book">BOOK NOW</Link>
+        <Link style={{fontSize:"1vw"}} to="/book">BOOK NOW</Link>
     </Button>
     <p>or</p>
     <p className="bold">Call for Assistance</p>
@@ -56,8 +57,8 @@ const Home = () => {
         textColor: "#31c5fe"
       }} {...buttonStyle} {...custom}>
       <Link to='tel:+123456789'>
-      <HStack><FaPhone/>
-      <p>+91 9674968800</p></HStack>
+      <HStack {...m0} ><FaPhone size={"1vw"}/>
+      <p style={{fontSize:"1vw"}}>+91 9674968800</p></HStack>
       
       </Link>
       </Button>
