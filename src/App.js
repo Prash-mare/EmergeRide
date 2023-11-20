@@ -9,12 +9,14 @@ import Footer from './component/Footer.jsx';
 import Legal from './component/Legal.jsx';
 import Scroll from './component/ScrollTop.jsx';
 import ContactUs from './component/ContactUs.jsx';
+import Ambulance from './component/Ambulance.jsx';
 
+
+import './styles/main.scss';
 import './styles/Header.scss';
 import './styles/App.scss';
 import './styles/Home.scss';
 import './styles/Login.scss';
-import './styles/main.scss';
 import './styles/ServiceCards.scss';
 import './styles/Contact.scss';
 
@@ -30,6 +32,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/terms" element={<Legal/>}/>
           <Route path="/contact" element={<ContactUs/>}/>
+          <Route path="/ambulance" element={<Ambulance/>}/>
         </Routes>
         <Footer />
       </Router>
