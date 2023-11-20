@@ -43,32 +43,47 @@ function InputItem({type}) {
             }
         })
     } 
+
+    const [apiError, setApiError] = useState(false); // State to track API error
+
+    // Handle API loading error
+    const handleApiError = (error) => {
+      console.error('Error loading Google Places Autocomplete API:', error);
+      setApiError(true); // Set state to indicate API error
+    };
   return (
     <div className='bg-slate-200 p-3 rounded-lg mt-3 flex items-center gap-4'>
-    <Image src={type==='source'?sourceImg:destinationImg} width={15} height={15} />
-    <GooglePlacesAutocomplete
-      apiKey={process.env.REACT_APP_GOOGLE_API_KEY}
-  onSelect={(place) => console.log('Selected:', place)}
-  onError={(error) => console.error('Error:', error)}
-      selectProps={{
-        value, onChange: (place)=>{getLatAndLng(place,type);
-        setValue(place)},
-        placeholder: placeholder,
-        isClearable: true,
-        className: 'w-full',
-        components:{
-            DropdownIndicator:false,
-        },
-        styles:{
-            control: (provided)=>({
-                ...provided,
-                backgroundColor: '#00ffff00',
-                border: 'none',
+    <Image src={type === 'source' ? sourceImg : destinationImg} width={15} height={15} />
+    {!apiError ? ( // Render only if API has not encountered an error
+      <GooglePlacesAutocomplete
+        apiKey={process.env.REACT_APP_GOOGLE_API_KEY}
+        onSelect={(place) => console.log('Selected:', place)}
+        onError={handleApiError} // Handle API error
+        selectProps={{
+          value,
+          onChange: (place) => {
+            getLatAndLng(place, type);
+            setValue(place);
+          },
+          placeholder: placeholder,
+          isClearable: true,
+          className: 'w-full',
+          components: {
+            DropdownIndicator: false,
+          },
+          styles: {
+            control: (provided) => ({
+              ...provided,
+              backgroundColor: '#00ffff00',
+              border: 'none',
             }),
-        }
-      }}
-    />
-    </div>
+          },
+        }}
+      />
+    ) : (
+      <p>Error loading Google Places Autocomplete API</p>
+    )}
+  </div>
   )
 }
 
