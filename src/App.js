@@ -8,6 +8,7 @@ import Login from './component/Login.jsx';
 import Footer from './component/Footer.jsx';
 import Legal from './component/Legal.jsx';
 import Scroll from './component/ScrollTop.jsx';
+import ContactUs from './component/ContactUs.jsx';
 
 import './styles/Header.scss';
 import './styles/App.scss';
@@ -15,6 +16,7 @@ import './styles/Home.scss';
 import './styles/Login.scss';
 import './styles/main.scss';
 import './styles/ServiceCards.scss';
+import './styles/Contact.scss';
 
 function App() {
   return (
@@ -27,6 +29,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/terms" element={<Legal/>}/>
+          <Route path="/contact" element={<ContactUs/>}/>
         </Routes>
         <Footer />
       </Router>

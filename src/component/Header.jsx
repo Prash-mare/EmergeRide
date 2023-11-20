@@ -63,7 +63,7 @@ const Header = () => {
       <Link  to="/services">Services</Link>
     </Button>
     <Button _hover={{transform:"scale(1.2)"}} {...bcss}>
-      <Link  to='/about'>Contact Us</Link>
+      <Link  to='/contact'>Contact Us</Link>
     </Button>
     <Button _hover={{transform:"scale(1.2)"}} {...bcss}>
       <Link  to='/join'>Join Us</Link>
