@@ -56,7 +56,6 @@ const Header = () => {
     </HStack>
     <HStack>
    <HStack  p={4}  >
-   
     <Button _hover={{transform:"scale(1.2)"}} {...bcss}>
       <Link  to="/">Home</Link>
     </Button>
@@ -76,7 +75,7 @@ const Header = () => {
       <Link  to='/hospital'>Hospitals</Link>
     </Button>
    </HStack>
-   <HStack>
+   <HStack marginRight={4}>
    <Button _hover={{
         background: "rgb(221, 42, 87)" 
       }}  {...book}>

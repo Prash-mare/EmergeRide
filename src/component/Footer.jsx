@@ -227,7 +227,7 @@ const FooterWrapper = styled.footer`
     .footer-bottom{
       & > .container{
         flex-direction: #fff;
-        justify-content: space-between;
+        justify-content: space-around;
       }
 
       li{

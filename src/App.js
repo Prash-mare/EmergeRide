@@ -14,6 +14,7 @@ import './styles/App.scss';
 import './styles/Home.scss';
 import './styles/Login.scss';
 import './styles/main.scss';
+import './styles/ServiceCards.scss';
 
 function App() {
   return (

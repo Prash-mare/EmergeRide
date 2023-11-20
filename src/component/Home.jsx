@@ -4,7 +4,7 @@ import Lottie from 'react-lottie-player'
 import animationdata from "../assets/Animation - 1699646803606.json"
 import { Link } from 'react-router-dom'
 import {FaPhone} from "react-icons/fa"
-
+import ServiceCards from './ServiceCards'
 
 const container={
     width:"100%",
@@ -25,6 +25,9 @@ const buttonStyle={
   alignItems: "center",
   cursor: "pointer",
   userSelect: "none",
+  _hover: {
+    background: "#ff4785",
+  },
 }
 
 const custom={
@@ -34,12 +37,17 @@ const custom={
 }
 
 const m0={
-  margin:"0"
+  margin:"0",
+}
+
+const positionfix={
+  marginTop: "50px",
 }
 
 const Home = () => {
   return (
-    <div className='cs'>
+  <VStack className='container1'>
+  <div className='cs'>
    <VStack {...container}>
     <HStack>
     <VStack>
@@ -62,16 +70,24 @@ const Home = () => {
       
       </Link>
       </Button>
+      </VStack>
+      <Lottie style={{ width: "100%", height: "auto" }}  loop play speed={0.5} animationData={animationdata} />
+      </HStack>
+      </VStack>
+    </div>
+    <VStack className='container2'>
+    <p>Our Services</p>
+    <div class='circle1 xxlarge shade1'></div>
+    <div class='circle1 xlarge shade2'></div>
+      <ServiceCards/>
+      <Button _hover={{
+        background: "rgb(221, 42, 87)" 
+      }} {...buttonStyle}{...positionfix}>
+        <Link style={{fontSize:"1vw"}} to="/book">BOOK NOW</Link>
+    </Button>
     </VStack>
-    <Lottie style={{ width: "100%", height: "auto" }}  loop play speed={0.5} animationData={animationdata} />
-    </HStack>
+    
    </VStack>
-
-  
-   <VStack>
-
-   </VStack>
-   </div>
   )
 }
 
