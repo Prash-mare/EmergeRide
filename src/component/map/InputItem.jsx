@@ -56,7 +56,8 @@ function InputItem({type}) {
     <Image src={type === 'source' ? sourceImg : destinationImg} width={15} height={15} />
     {!apiError ? ( // Render only if API has not encountered an error
       <GooglePlacesAutocomplete
-        apiKey={process.env.REACT_APP_GOOGLE_API_KEY}
+        // apiKey={process.env.REACT_APP_GOOGLE_API_KEY}
+        apiKey={"api"}
         onSelect={(place) => console.log('Selected:', place)}
         onError={handleApiError} // Handle API error
         selectProps={{
