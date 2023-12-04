@@ -60,26 +60,26 @@ const Header = () => {
       <Link  to="/">Home</Link>
     </Button>
     <Button _hover={{transform:"scale(1.2)"}} {...bcss}>
-      <Link  to="/services">Services</Link>
+      <Link  to="/Error">Services</Link>
     </Button>
     <Button _hover={{transform:"scale(1.2)"}} {...bcss}>
       <Link  to='/contact'>Contact Us</Link>
     </Button>
     <Button _hover={{transform:"scale(1.2)"}} {...bcss}>
-      <Link  to='/join'>Join Us</Link>
+      <Link  to='/Error'>Join Us</Link>
     </Button>
     <Button _hover={{transform:"scale(1.2)"}} {...bcss}>
       <Link  to='/ambulance'>Ambulances</Link>
     </Button>
     <Button _hover={{transform:"scale(1.2)"}} {...bcss}>
-      <Link  to='/hospital'>Hospitals</Link>
+      <Link  to='/Error'>Hospitals</Link>
     </Button>
    </HStack>
    <HStack marginRight={4}>
    <Button _hover={{
         background: "rgb(221, 42, 87)" 
       }}  {...book}>
-      <Link to='/book'>Book Now</Link>
+      <Link to='/Error'>Book Now</Link>
     </Button>
     <Button _hover={{
         borderColor: "#31c5fe",

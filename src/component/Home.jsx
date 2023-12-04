@@ -56,7 +56,7 @@ const Home = () => {
     <Button _hover={{
         background: "rgb(221, 42, 87)" 
       }} {...buttonStyle}>
-        <Link style={{fontSize:"1vw"}} to="/book">BOOK NOW</Link>
+        <Link style={{fontSize:"1vw"}} to="/Error">BOOK NOW</Link>
     </Button>
     <p>or</p>
     <p className="bold">Call for Assistance</p>
@@ -80,10 +80,10 @@ const Home = () => {
     <div class='circle1 xxlarge shade1'></div>
     <div class='circle1 xlarge shade2'></div>
       <ServiceCards/>
-      <Button _hover={{
+      <Button  _hover={{
         background: "rgb(221, 42, 87)" 
       }} {...buttonStyle}{...positionfix}>
-        <Link style={{fontSize:"1vw"}} to="/book">BOOK NOW</Link>
+        <Link style={{fontSize:"1vw"}} to="/Error">BOOK NOW</Link>
     </Button>
     </VStack>
     

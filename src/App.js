@@ -10,6 +10,7 @@ import Legal from './component/Legal.jsx';
 import Scroll from './component/ScrollTop.jsx';
 import ContactUs from './component/ContactUs.jsx';
 import Ambulance from './component/Ambulance.jsx';
+import Error from './component/Utilities/Error.jsx'
 
 
 import './styles/main.scss';
@@ -33,6 +34,7 @@ function App() {
           <Route path="/terms" element={<Legal/>}/>
           <Route path="/contact" element={<ContactUs/>}/>
           <Route path="/ambulance" element={<Ambulance/>}/>
+          <Route path='/Error' element={<Error/>} />
         </Routes>
         <Footer />
       </Router>
